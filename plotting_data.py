@@ -11,7 +11,7 @@ parser.add_argument("-f", "--file", dest="file", help="input data file")
 args = parser.parse_args()
 file = args.file
 
-sns.set(style="dark", palette="gist_rainbow")
+sns.set(style="dark", palette="ocean")
 
 diabetes = pd.read_csv(filepath_or_buffer=file, sep=' ', header=0)
 print(diabetes)
